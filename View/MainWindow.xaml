@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        Title="MainWindow" Height="550" Width="900">
+    <Border MouseDown="Border_MouseDown">
+        <Grid MouseDown="Grid_MouseDown">
+        <Frame NavigationUIVisibility="Hidden"
+               x:Name="MainFrame"/>
+            <StackPanel HorizontalAlignment="Right"
+                        VerticalAlignment="Top">
+                <materialDesign:PackIcon Kind="Close"
+                                         Height="50"
+                                         Cursor="Hand"
+                                         MouseDown="PackIcon_MouseDown"
+                                         Width="50"/>
+            </StackPanel>
+    </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,194 @@
+﻿<Page x:Class="WpfApp2.View.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="900"
+      FontFamily="Comic Sans MS"
+      Title="MainPage">
+    <Border CornerRadius="20" Background="White">
+        <Grid>
+        <StackPanel>
+            <StackPanel Height="182" Width="212"
+                            HorizontalAlignment="Left">
+                <Image Source="/images/2.png"
+                       Margin="10 0 0 0"
+                       HorizontalAlignment="Left" Height="142" Width="138"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="0 0 0 70">
+                <Button Height="30"
+                    Width="600">
+                    <TextBlock Text="Получить бесплатную консультацию ->" TextAlignment="Left" Margin="0 0 300 0"/>
+                </Button>
+        </StackPanel>
+        <Image Source="/images/5.png" Margin="512,87,-166,-164" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-20.724"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <StackPanel HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                    Margin="0 70 100 0">
+            <TextBlock><Run Text="ЦИФРОВОЙ МАРКЕТИНГ," FontSize="30" FontWeight="DemiBold"/>
+                <LineBreak/>
+                <Run Text="КОТОРЫЙ ВЕДЕТ" FontSize="30" FontWeight="DemiBold"/>
+                <LineBreak/>
+                <Run Text="К РЕЗУЛЬТАТАМ" FontSize="30" FontWeight="DemiBold"/>
+            </TextBlock>
+            <TextBlock>
+                <Run Text="Сделайте следующий шаг в развитии своего бизнеса с помощью" FontSize="15"/>
+                <LineBreak/>
+                <Run Text="цифрового маркетинга." FontSize="15"/>
+            </TextBlock>
+            <TextBlock>
+                <Run Text="Свяжитесь с одним из наших опытных цифровых стратегов, чтобы" FontSize="15"/>
+                <LineBreak/>
+                <Run Text="узнать, как мы можем помочь вам в достижении ваших" FontSize="15"/>
+                <LineBreak/>
+                <Run Text="бизнес-целей" FontSize="15"/>
+            </TextBlock>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right"
+                            VerticalAlignment="Top"
+                            Orientation="Horizontal"
+                            Height="50"
+
+                            Margin="0 15 550 0">
+            <Button Background="Transparent"
+                    Height="40"
+                    Width="200"
+                            Foreground="Black"
+                            BorderBrush="Transparent"
+                            x:Name="BtnCase"
+                            Click="BtnCase_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Кейсы"
+                               Foreground="Blue"
+                                       FontSize="20" Height="50" Width="100" RenderTransformOrigin="0.54,0.467">
+                        <TextBlock.Style>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="TextDecorations" Value="Underline" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right"
+                            VerticalAlignment="Top"
+                            Orientation="Horizontal"
+                            Height="50"
+
+                            Margin="0 15 425 0">
+            <Button Background="Transparent"
+                    Height="40"
+                    Width="200"
+                            Foreground="Black"
+                            BorderBrush="Transparent"
+                            x:Name="BtnContact"
+                            Click="BtnContact_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Контакты"
+                               Foreground="Blue"
+                                       FontSize="20" Height="50" Width="100" RenderTransformOrigin="0.54,0.467">
+                        <TextBlock.Style>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="TextDecorations" Value="Underline" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right"
+                            VerticalAlignment="Top"
+                            Orientation="Horizontal"
+                            Height="50"
+
+                            Margin="0 15 270 0">
+            <Button Background="Transparent"
+                    Height="40"
+                    Width="200"
+                            Foreground="Black"
+                            BorderBrush="Transparent"
+                            x:Name="BtnUslugi"
+                            Click="BtnUslugi_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Услуги"
+                               Foreground="Blue"
+                                       FontSize="20" Height="50" Width="100" RenderTransformOrigin="0.54,0.467">
+                        <TextBlock.Style>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="TextDecorations" Value="Underline" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right"
+                            VerticalAlignment="Top"
+                            Orientation="Horizontal"
+                            Height="50"
+
+                            Margin="0 15 70 0">
+            <Button Background="Transparent"
+                    Height="40"
+                    Width="250"
+                            Foreground="Black"
+                            BorderBrush="Transparent">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="+7-888-777-66-55"
+                               Foreground="Blue"
+                                       FontSize="20" Height="50" Width="550" RenderTransformOrigin="0.54,0.467">
+                        <TextBlock.Style>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="TextDecorations" Value="Underline" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="5 130 0 0">
+            <Button Height="30"
+                    Width="150"
+                    Background="Transparent"
+                    BorderBrush="Orange"
+                    Content="Оставить заявку"
+                    x:Name="BtnZayava"
+                    Click="BtnZayava_Click"
+                    Foreground="Orange"
+                    BorderThickness="2"/>
+        </StackPanel>
+    </Grid>
+    </Border>
+</Page>
